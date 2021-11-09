@@ -1,0 +1,54 @@
+!!!!!Don't use compiler!!!!
+
+Q&A:
+Are you able to look up reference materials for your programming language during the interview?
+No, don't remember syntax, mention to interviewer
+
+
+Any suggestions, if you get nervous during the interview and your mind goes blank?
+communicate, ask for help
+
+how do interviewers select questions? is there a standard format for choosing a question?
+unique, internal pool, select by interviewer interests, different type of questions
+
+Math question?
+No
+
+Is there a time limit for each coding question separately ?
+No,total 45min
+
+What happens if my code works for cases that I am testing on or the interviewer asked me to test on but fails on some cases which were not captured during the interview?
+disign diff test cases
+
+
+code readability, typo, long variable name?
+try to avoid type, better to read, communicate with interviewer for type
+
+should we write algo first, or jump directly
+think, talk algo first
+
+Can we use two monitors during the interview? One for the codepad and the other for the bluejeans?
+yes
+
+TDD?
+No, think solution first, tradeoff, discuss,  start coding, verification manual
+
+is there any type of algorithm that interviewer won't ask about (like DP for example)? thanks
+We will not ask Dynamic Programming questions or puzzles
+
+
+
+
+Mock Interview:
+35 coding
+cannot execute code
+
+threeSumZero
+[3,5,8,10,-9,-11,16,2] => [3,8,-11]
+[3,5,4,9,16,10] =>NONE
+
+1 sol is enough
+[0,-1,1,-2,2] =>[0,1,-1]
+[0,1,0,1,0,1] => [0,0,0]
+
+5-10 Q&A
