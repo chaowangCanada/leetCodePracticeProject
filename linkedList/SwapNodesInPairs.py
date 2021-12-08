@@ -1,6 +1,5 @@
 from typing import Optional
 
-
 class Node:
 
     # Constructor to initialize the node object
@@ -26,18 +25,23 @@ class LinkedList:
         self.head = new_node
 
 
-def swap(llist, head, next):
-    if (llist.head == head):
-        llist.head = next
-    head.next = next.next
-    next.next = head
+def swap(head, headNext, headNextNext):
+    headNext.next = headNextNext.next
+    headNextNext.next = headNext
+    head.next = headNextNext
 
 
-def swapPairs(llist, head):
-    if head is not None and head.next is not None:
-        swap(llist, head, head.next)
-        swapPairs(llist, head.next)
+def swapPairsWrapper(llist, head):
+    fake_Node = Node(-1)
+    fake_Node.next = head
+    llist.head = fake_Node
+    swapPairs(fake_Node)
+    llist.head = fake_Node.next
 
+def swapPairs(head):
+    if head.next is not None and head.next.next is not None:
+        swap(head, head.next, head.next.next)
+        swapPairs(head.next.next)
 
 llist = LinkedList()
 llist.push(5)
@@ -47,5 +51,5 @@ llist.push(2)
 llist.push(1)
 llist.printList()
 
-swapPairs(llist, llist.head)
+swapPairsWrapper(llist, llist.head)
 llist.printList()
